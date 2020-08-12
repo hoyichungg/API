@@ -1,0 +1,120 @@
+body{
+    /* background:linear-gradient(135deg,#EBF3FC,#DEEAF8); */
+    background-color: #F8F1EB; 
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:100% 100%;
+
+}
+
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* .head{
+  background-color: #FFEA80;
+} */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px; 
+}
+
+.card {
+  position: relative;
+  border-top-left-radius:20px;
+  border-top-right-radius:20px; 
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px; 
+  margin: 1rem;
+  /* background-color: rgba(255,255,255,0.9); */
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 20px rgba(128,128,128,0.4);
+  border: none;
+  color: #ec8a8a;
+  /* padding: 10px; */
+  top: 0px;
+}
+.card:hover{
+  transition: top 0.3s;
+  top: -30px;
+}
+.card_header1{
+  background:linear-gradient(135deg,#835D58,#A39990);
+  background-color: #835D58;
+  color: white;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  border-top-left-radius:20px;
+  border-top-right-radius:20px; 
+  padding-top:10px; 
+  flex-direction: column;
+}
+.card_header2{
+  background:linear-gradient(135deg,#ECA440,#FDD073,#F9E58F);
+  background-color: #A39990;
+  color: white;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  border-top-left-radius:20px;
+  border-top-right-radius:20px; 
+  padding-top:10px; 
+  flex-direction: column;
+}
+.card_body{
+  padding: 20px 40px 10px 40px;
+  font-size: 18px;
+  color: #666666;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  flex-direction: column;
+}
+.circle1{
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  background-color: #E17C72;
+  height: 70px;
+  width: 70px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+}
+.circle2{
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  background-color: #F3B9B5;
+  height: 70px;
+  width: 70px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
